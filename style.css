@@ -1,0 +1,177 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+text-align:center;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.top-bar{
+position:absolute;
+top:15px;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:0 20px;
+}
+
+.icon-btn{
+background:none;
+border:1px solid white;
+color:white;
+padding:8px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.center-container{
+text-align:center;
+}
+
+.logo{
+font-size:80px;
+margin-bottom:10px;
+}
+
+.mode-btn{
+display:block;
+width:250px;
+margin:15px auto;
+padding:14px;
+border-radius:25px;
+border:none;
+cursor:pointer;
+background:#4caf50;
+color:white;
+}
+
+.mode-btn.secondary{
+background:#2196f3;
+}
+
+.container{
+width:90%;
+max-width:500px;
+}
+
+.color-selection{
+display:flex;
+justify-content:center;
+gap:15px;
+margin:20px 0;
+flex-wrap:wrap;
+}
+
+.color-box{
+padding:15px 20px;
+border:2px solid transparent;
+border-radius:10px;
+cursor:pointer;
+background:#222;
+}
+
+.color-box.active{
+border-color:#4caf50;
+}
+
+.start-btn{
+margin-top:20px;
+padding:12px 25px;
+border-radius:25px;
+border:none;
+background:#4caf50;
+color:white;
+cursor:pointer;
+}
+
+#board{
+width:400px;
+margin:20px auto;
+}
+
+.game-wrapper{
+padding:20px;
+}
+
+.player-row{
+display:flex;
+justify-content:space-between;
+width:400px;
+margin:10px auto;
+}
+
+.captured img{
+width:22px;
+margin:2px;
+}
+
+.quit-btn{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+border-radius:25px;
+background:#f44336;
+color:white;
+cursor:pointer;
+}
+
+/* WIN MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+}
+
+.board-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.captured-side {
+    width: 80px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 4px;
+}
+
+.captured-side img {
+    width: 30px;
+}

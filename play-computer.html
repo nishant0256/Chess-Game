@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play vs Computer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="main-title">Play vs Computer</h1>
+
+    <h2>Play As</h2>
+
+    <div class="color-selection">
+        <div class="color-box active" onclick="selectColor(event,'white')">♙ White</div>
+        <div class="color-box" onclick="selectColor(event,'black')">♟ Black</div>
+        <div class="color-box" onclick="selectColor(event,'random')">🎲 Random</div>
+    </div>
+
+    <h2>Difficulty Level</h2>
+
+    <input type="range" min="1" max="10" value="1" id="difficultySlider">
+    <div id="levelName">1 - Beginner</div>
+
+    <button class="start-btn" onclick="startGame()">Start Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
